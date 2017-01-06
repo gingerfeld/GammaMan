@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{3B9AA270-F298-9972-62B5-01B7B52B1EB9}") = "Gamma Man", "Assembly-CSharp.csproj", "{D47250A9-CC90-3EAD-DB20-2FD3447766F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D47250A9-CC90-3EAD-DB20-2FD3447766F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D47250A9-CC90-3EAD-DB20-2FD3447766F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D47250A9-CC90-3EAD-DB20-2FD3447766F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D47250A9-CC90-3EAD-DB20-2FD3447766F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
