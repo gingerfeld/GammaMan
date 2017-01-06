@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\Movement\playerLook.cs" />
      <Compile Include="Assets\Scripts\Movement\playerMove.cs" />
      <Compile Include="Assets\Scripts\UI\UIOpener.cs" />
+     <Compile Include="Assets\Scripts\UI\test.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

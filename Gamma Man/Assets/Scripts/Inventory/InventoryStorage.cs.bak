@@ -14,8 +14,14 @@ public class InventoryStorage : MonoBehaviour {
    }
     
     public bool FitsInInventory(item potentialFit, coord grabOffset, coord dropPos){
+        foreach(coord potentialFitCoord in potentialFit.coordinates){
+            coord invCoord = potentialFitCoord  + dropPos;
+        }
+        
+        
         foreach(item otherItem in inv){
             foreach(coord otherCoord in otherItem.coordinates){
+                //coord otherCoord;
                 foreach(coord potentialFitCoord in potentialFit.coordinates){
                     if(otherCoord.Equals(c)){
                         return false;

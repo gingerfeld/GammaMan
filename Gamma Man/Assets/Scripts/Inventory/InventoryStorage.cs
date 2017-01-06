@@ -21,11 +21,11 @@ public class InventoryStorage : MonoBehaviour {
         
         foreach(item otherItem in inv){
             foreach(coord otherCoord in otherItem.coordinates){
-                coord otherCoord 
+                //coord otherCoord;
                 foreach(coord potentialFitCoord in potentialFit.coordinates){
-                    if(otherCoord.Equals(c)){
-                        return false;
-                    }
+                    //if(otherCoord.Equals(c)){
+                     //   return false;
+                   // }
                 }                        
             }
         }
