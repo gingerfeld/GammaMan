@@ -1,0 +1,43 @@
+﻿using UnityEngine;
+using UnityEngine.UI;
+using System.Collections;
+using System.Collections.Generic;
+
+public class InventoryManager : MonoBehaviour {
+    public GameObject imageTemplate;
+    private GridLayoutGroup GLG;
+    private Transform playerCamera;
+    public List<Item> inventory = new List<Item>();
+    
+    void Awake (){
+        playerCamera = GameObject.Find("player").transform.Find("Main Camera");
+        GLG = GetComponent<GridLayoutGroup>();
+        GLG.cellSize = new Vector2(transform.localScale.x,transform.localScale.x)*135;  
+        print(GLG.cellSize);
+    }
+    void Update(){
+        if(Input.GetButtonDown("Jump")){
+            if(inventory.Count > 0){
+                DropItem(inventory[inventory.Count-1]);
+            }
+        }
+    }
+    public void AddItem(Item newItem){
+        GameObject newCell =  (GameObject)Instantiate(imageTemplate,transform);
+        Image cellImage = newCell.GetComponent<Image>();
+        cellImage.sprite = newItem.icon;
+        newCell.name = newItem.transform.name;
+        newItem.transform.parent = newCell.transform;
+        newItem.gameObject.SetActive(false);
+        inventory.Add(newItem);
+    }
+    public void DropItem(Item dropItem){
+        
+        dropItem.transform.parent = null;
+        dropItem.transform.position = playerCamera.position + playerCamera.forward*2;
+        dropItem.gameObject.SetActive(true);
+                       
+        inventory.Remove(dropItem);
+        Destroy(transform.Find(dropItem.transform.name).gameObject);
+    }
+}

@@ -1,0 +1,23 @@
+﻿using UnityEngine;
+using UnityEngine.UI;
+using System.Collections;
+using System.Collections.Generic;
+
+public class gridTest : MonoBehaviour {
+    public GameObject imageTemplate;
+    private GridLayoutGroup GLG;
+    void Awake (){
+        GLG = GetComponent<GridLayoutGroup>();
+        GLG.cellSize = new Vector2(transform.localScale.x,transform.localScale.x)*135;  
+        print(GLG.cellSize);
+    }
+    GameObject newInvItem;
+    void Update(){
+        if(newInvItem != null){
+            print("Adding item at " + newInvItem.transform.position);
+            newInvItem = null;
+        if(Input.GetButtonDown("Jump")){
+            newInvItem = (GameObject)Instantiate(imageTemplate,transform);
+        }
+    }
+}

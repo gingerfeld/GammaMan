@@ -45,11 +45,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Inventory\InventoryStorage.cs" />
+     <Compile Include="Assets\Models\Items\ItemTypes\foodItem.cs" />
+     <Compile Include="Assets\Models\Items\ItemTypes\rangedWeaponItem.cs" />
+     <Compile Include="Assets\Models\Items\Shotgun\shotgunItem.cs" />
+     <Compile Include="Assets\Scripts\Inventory\Item.cs" />
+     <Compile Include="Assets\Scripts\Inventory\ItemPickerUpper.cs" />
+     <Compile Include="Assets\Scripts\Movement\crouchHandler.cs" />
      <Compile Include="Assets\Scripts\Movement\playerLook.cs" />
      <Compile Include="Assets\Scripts\Movement\playerMove.cs" />
+     <Compile Include="Assets\Scripts\UI\DragHandler.cs" />
+     <Compile Include="Assets\Scripts\UI\HoverHandler.cs" />
+     <Compile Include="Assets\Scripts\UI\Inventory.cs" />
+     <Compile Include="Assets\Scripts\UI\InventoryManager.cs" />
+     <Compile Include="Assets\Scripts\UI\RightButtonEvent.cs" />
+     <Compile Include="Assets\Scripts\UI\Slot.cs" />
      <Compile Include="Assets\Scripts\UI\UIOpener.cs" />
-     <Compile Include="Assets\Scripts\UI\test.cs" />
+     <None Include="Assets\todo.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

@@ -1,0 +1,12 @@
+﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+
+public abstract class rangedWeaponItem : Item {    
+    public int bulletCapacity;  //number of bullets that can fit in a clip.
+    public int bulletsInGun;    //number of bullets currently loaded, including whatever's in the chamber
+    public float damage;        //damage done to system by bullet. Does not directly effect injury.
+    public float damageDrop; //Some guns lose damage linearly PER METER.
+    public abstract void Fire(
+    );
+}

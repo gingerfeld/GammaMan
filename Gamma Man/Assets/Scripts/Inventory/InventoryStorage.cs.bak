@@ -23,9 +23,9 @@ public class InventoryStorage : MonoBehaviour {
             foreach(coord otherCoord in otherItem.coordinates){
                 //coord otherCoord;
                 foreach(coord potentialFitCoord in potentialFit.coordinates){
-                    if(otherCoord.Equals(c)){
-                        return false;
-                    }
+                    //if(otherCoord.Equals(c)){
+                     //   return false;
+                   // }
                 }                        
             }
         }
@@ -34,17 +34,7 @@ public class InventoryStorage : MonoBehaviour {
    
 }
 
-[System.Serializable]
-public class item{
-    public string name;
-    public string description;
-    
-    public GameObject worldObject;
-    public Texture2D icon;
-    
-    public coord[] coordinates;
-    public coord invPosition;
-}
+
 
 public class coord{
     public int x;

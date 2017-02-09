@@ -25,7 +25,7 @@ public class UIOpener : MonoBehaviour {
                 print("Opening menu");
             }
         }else if (Input.GetButtonDown("Inventory")){
-            if(invMenu.gameObject.active){
+            if(invMenu.gameObject.activeSelf){
                 Time.timeScale = 1.0f;
                 invMenu.gameObject.SetActive(false);
                 print("Closing inventory");
